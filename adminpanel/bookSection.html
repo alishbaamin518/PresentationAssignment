@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books - Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <style>
+    .book-wrapper {
+      padding: 2rem;
+    }
+
+    .book-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .book-header h2 {
+      font-size: 1.7rem;
+    }
+
+    .book-header input[type="search"] {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 250px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .book-card img {
+      width: 100px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .book-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .book-author {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.8rem;
+    }
+
+    .book-actions a {
+      display: inline-block;
+      margin: 0 0.3rem;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 0.9rem;
+    }
+
+    .book-actions a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .book-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .book-header input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar (you can reuse from other pages) -->
+    <aside class="sidebar">
+      <h2 class="logo">📚 Admin</h2>
+      <nav>
+        <ul>
+          <li><a href="admin.html">Dashboard</a></li>
+          <li><a href="book-section.html" class="active">Books</a></li>
+          <li><a href="#">Authors</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Earnings</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="book-wrapper">
+        <div class="book-header">
+          <h2>Book Collection</h2>
+          <input type="search" placeholder="Search books..." />
+        </div>
+
+        <div class="book-grid">
+          <div class="book-card">
+            <img src="https://i.imgur.com/0y8Ftya.jpg" alt="Jannat Kay Pattay">
+            <div class="book-title">Jannat Kay Pattay</div>
+            <div class="book-author">by Nemrah Ahmed</div>
+            <div class="book-actions">
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <img src="https://i.imgur.com/qkdV2Zr.jpg" alt="Haalim">
+            <div class="book-title">Haalim</div>
+            <div class="book-author">by Nemrah Ahmed</div>
+            <div class="book-actions">
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <img src="https://i.imgur.com/GDwZJ1F.jpg" alt="Mushaf">
+            <div class="book-title">Mushaf</div>
+            <div class="book-author">by Nemrah Ahmed</div>
+            <div class="book-actions">
+              <a href="#">Edit</a>
+              <a href="#">Delete</a>
+            </div>
+          </div>
+          <!-- Add more book cards here -->
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

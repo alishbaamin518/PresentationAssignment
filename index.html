@@ -6,25 +6,34 @@
   <title>Nemrah Ahmed Books</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+
 </head>
 <body>
+ 
   <!--______________________________________________________________________________________________________ NAVBAR -->
-  <header class="navbar">
-    <div class="nav-container container">
-      <div class="logo">Nemrah Ahmed</div>
-      <nav>
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#audio">Audio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  <div class="nav-header">
+    <div class="nav-title">Nemrah Ahmed</div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <a href="#hero" class="active">Home</a>
+    <a href="#books">Books</a>
+    <a href="#audio">Audio</a>
+    <a href="#Shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="authentication/signinandlogout.html">👨🏻‍💻</a>
+  </div>
+</header>
   <!-- _______________________________________________________________________________________________HERO SECTION -->
 
   <section class="video section" id="hero">
@@ -36,7 +45,7 @@
       <div class="hero-text">
         <h1>Explore the World of Nemrah Ahmed</h1>
         <p>Stories that touch your soul, thrill your heart, and inspire your thoughts.</p>
-        <a href="#books" class="btn">Browse Books</a>
+        <a href="#Browsebooks" class="btn">Browse Books</a>
       </div>
       <img src="imagesofnovel/herobook.png" alt="Hero Book" class="hero-img" />
     </div>
@@ -58,7 +67,7 @@
           <a class="btn" href="https://example.com/Karakaram Ka Taj Mehal" target="_blank">Read Now</a>
         </div>
         <div class="card">
-          <img src="imagesofnovel/namal.png" alt="maala">
+          <img src="imagesofnovel/maala.png" alt="maala">
           <h3>Maala</h3>
           <a class="btn" href="https://example.com/namal" target="_blank">Read Now</a>
         </div>
@@ -70,6 +79,72 @@
       </div>
     </div>
   </section>
+<!-- __________________________________________________________________________BUY NOW SECTION____________________________ -->
+
+  
+<section class="shop-section" id="Shop">
+  <h2>📚 Shop Now – Top Books by Nemrah Ahmed</h2>
+  <div class="shop-container" id="Browsebooks">
+
+    <!-- Book Card -->
+    <div class="book-card">
+      <img src="imagesofnovel/jannat ke pattey.png" alt="Jannat Kay Pattay" />
+      <h3>Jannat Kay Pattay</h3>
+      <p class="price">Rs. 2,499.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/maala.webp" alt="Maala" />
+      <h3>Maala</h3>
+      <p class="price">Rs. 4,999.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/namal.webp" alt="Namal" />
+      <h3>Namal</h3>
+      <p class="price">Rs. 4,000.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/herobook.png" alt="Mushaf" />
+      <h3>Mushaf</h3>
+      <p class="price">Rs. 1,600.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/kktj.webp" alt="Karakaram ka taj Mehal" />
+      <h3>Karakaram ka taj Mehal</h3>
+      <p class="price">Rs. 999.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/mainanmol.webp" alt="Main Anmol" />
+      <h3>Main Anmol</h3>
+      <p class="price">Rs. 2,300.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/Home Girl.webp" alt="Home Girl" />
+      <h3>Home Girl</h3>
+      <p class="price">Rs. 700.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+    <div class="book-card">
+      <img src="imagesofnovel/Husn e Anjaam.webp" alt="Husn e Anjaam" />
+      <h3>Husn e Anjaam</h3>
+      <p class="price">Rs. 610.00</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+
+  </div>
+</section>
 
   <!-- ____________________________________________________________________________________FIXED BACKGROUND SECTION -->
   <section class="fixed-section" style="background-image: url('imagesofnovel/fixedbg.webp')">
@@ -80,25 +155,24 @@
   </section>
 
   <!-- ________________________________________________________________________________________AUDIO PLAYER -->
-  <section class="section" id="audio">
+  <section class="audio" id="audio">
     <div class="container">
-      <h2 class="section-title">Audio Experience</h2>
+      <h2>Audio Experience</h2>
       <audio controls>
         <source src="media/jannat-audio.mp3" type="audio/mpeg"/>
-        Your browser does not support the audio element.
       </audio>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ________________________________________________________________ABOUT SECTION -->
   <section class="section" id="about">
     <div class="container">
       <h2 class="section-title">About the Author</h2>
-      <p>Nemrah Ahmed is one of Pakistan’s most beloved novelists, known for her captivating storytelling, rich characters, and meaningful messages. Her novels combine faith, love, and thrill.</p>
+      <p class="authertext">Nemrah Ahmed is one of Pakistan’s most beloved novelists, known for her captivating storytelling, rich characters, and meaningful messages. Her novels combine faith, love, and thrill.</p>
     </div>
   </section>
 
-  <!-- REVIEWS SECTION -->
+  <!-- _____________________________________________________________________________________________REVIEWS SECTION -->
   <section class="section" id="reviews">
     <div class="container">
       <h2 class="section-title">What Readers Say</h2>
@@ -115,19 +189,20 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section class="section" id="contact">
+  <!-- ____________________________________________________________________________________________CONTACT SECTION -->
+  <section class="section">
     <div class="container">
       <h2 class="section-title">Stay Connected</h2>
       <p>For queries or feedback, email us at <a href="mailto:contact@nemrahbooks.com">contact@nemrahbooks.com</a></p>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- _________________________________________________________________________________________________________________FOOTER -->
   <footer class="section">
     <div class="container">
       <p>&copy; 2025 Nemrah Ahmed Novels. All rights reserved.</p>
     </div>
   </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
 </body>
 </html>

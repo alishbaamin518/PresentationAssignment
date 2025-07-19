@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="signinandlogout.css">
+</head>
+<body>
+
+
+  <div class="flip-container" id="user">
+    <input type="checkbox" id="flipper" hidden>
+    <div class="card">
+      <!--______________________________________________________________________________________________________Login Form -->
+      <section class="panel login">
+        <h2>Welcome Back</h2>
+        <form>
+          <div class="field"><input type="email" placeholder=" " required><label>Email</label></div>
+          <div class="field"><input type="password" placeholder=" " required><label>Password</label></div>
+          <button>Login</button>
+          <p>No account? <label for="flipper">Sign Up</label></p>
+        </form>
+      </section>
+      <!--_______________________________________________________________________________________________________Signup Form -->
+      <section class="panel signup">
+        <h2>Create Account</h2>
+        <form>
+          <div class="field"><input type="text" placeholder=" " required><label>Name</label></div>
+          <div class="field"><input type="email" placeholder=" " required><label>Email</label></div>
+          <div class="field"><input type="password" placeholder=" " required><label>Password</label></div>
+          <button>Sign Up</button>
+          <p>Already a member? <label for="flipper">Login</label></p>
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

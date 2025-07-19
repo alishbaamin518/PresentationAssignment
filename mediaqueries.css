@@ -1,5 +1,42 @@
 
-/* RESPONSIVE MEDIA QUERIES */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-btn {
+    display: block;
+  }
+  .nav-btn label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+  .nav-btn span {
+    background: #fff;
+    height: 2px;
+    margin: 4px 0;
+    width: 25px;
+  }
+  .nav-links {
+    position: absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    background:#222;
+    max-height:0;
+    overflow:hidden;
+    flex-direction: column;
+    transition: max-height 0.3s ease-in;
+  }
+  .nav-links a { display:block; padding:1rem; }
+  /* Toggle menu open */
+  #nav-toggle:checked ~ .nav-links {
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+}
+
 
 @media (max-width: 992px) {
   .hero-content {
@@ -27,7 +64,7 @@
     align-items: flex-start;
   }
 }
-
+/* HERO SECTION */
 @media (max-width: 576px) {
   .btn {
     padding: 0.6rem 1.2rem;
@@ -43,3 +80,33 @@
     font-size:1rem;
 }
 }
+
+@media (max-width: 1024px) {
+  .shop-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .shop-card img {
+    width: 90px;
+    height: 135px;
+  }
+}
+/*  BUY NOW BOOK */
+
+@media (max-width: 1024px) {
+  .book-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-card {
+    width: 100%;
+  }
+
+  .shop-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
