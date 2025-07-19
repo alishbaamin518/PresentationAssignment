@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nemrah Ahmed Books</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!--______________________________________________________________________________________________________ NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container container">
+      <div class="logo">Nemrah Ahmed</div>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#audio">Audio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- _______________________________________________________________________________________________HERO SECTION -->
+
+  <section class="video section" id="hero">
+    <video autoplay muted loop playsinline id="bg-video">
+    <source src="imagesofnovel/herovideobg.mp4" type="video/mp4">
+    <!-- Optional: add WebM/OGG sources for compatibility -->
+  </video>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Explore the World of Nemrah Ahmed</h1>
+        <p>Stories that touch your soul, thrill your heart, and inspire your thoughts.</p>
+        <a href="#books" class="btn">Browse Books</a>
+      </div>
+      <img src="imagesofnovel/herobook.png" alt="Hero Book" class="hero-img" />
+    </div>
+  </section>
+
+  <!--___________________________________________________________________________________________________ POPULAR BOOKS SECTION -->
+  <section class="section" id="books">
+    <div class="container">
+      <h2 class="section-title">Popular Books</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="imagesofnovel/jannat ke pattey.png" alt="Jannat Kay Pattay">
+          <h3>Jannat Kay Pattay</h3>
+          <a class="btn" href="https://example.com/jannat-kay-pattay" target="_blank">Read Now</a>
+        </div>
+        <div class="card">
+          <img src="imagesofnovel/karakarm ka taj mehal.png" alt="Karakaram ka taj mehal">
+          <h3>Karakaram Ka Taj Mehal</h3>
+          <a class="btn" href="https://example.com/Karakaram Ka Taj Mehal" target="_blank">Read Now</a>
+        </div>
+        <div class="card">
+          <img src="imagesofnovel/namal.png" alt="maala">
+          <h3>Maala</h3>
+          <a class="btn" href="https://example.com/namal" target="_blank">Read Now</a>
+        </div>
+        <div class="card">
+          <img src="imagesofnovel/mushaf.png" alt="Mushaf">
+          <h3>Mushaf</h3>
+          <a class="btn" href="https://example.com/mushaf" target="_blank">Read Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ____________________________________________________________________________________FIXED BACKGROUND SECTION -->
+  <section class="fixed-section" style="background-image: url('imagesofnovel/fixedbg.webp')">
+    <div class="overlay">
+      <h1>Feel the Words</h1>
+      <h4>The beautiful world of Nemrah’s storytelling.</h4>
+    </div>
+  </section>
+
+  <!-- ________________________________________________________________________________________AUDIO PLAYER -->
+  <section class="section" id="audio">
+    <div class="container">
+      <h2 class="section-title">Audio Experience</h2>
+      <audio controls>
+        <source src="media/jannat-audio.mp3" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About the Author</h2>
+      <p>Nemrah Ahmed is one of Pakistan’s most beloved novelists, known for her captivating storytelling, rich characters, and meaningful messages. Her novels combine faith, love, and thrill.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section-title">What Readers Say</h2>
+      <div class="card-grid">
+        <div class="card">
+          <p>“Haalim changed my perspective on life!”</p>
+          <h4>- Areeba R.</h4>
+        </div>
+        <div class="card">
+          <p>“Jannat Kay Pattay is my all-time favorite novel.”</p>
+          <h4>- Zoya T.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Stay Connected</h2>
+      <p>For queries or feedback, email us at <a href="mailto:contact@nemrahbooks.com">contact@nemrahbooks.com</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section">
+    <div class="container">
+      <p>&copy; 2025 Nemrah Ahmed Novels. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
